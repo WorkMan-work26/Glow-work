@@ -10,8 +10,12 @@ As per FSD document some fields which are need to remove made them non-mandatory
 ---
 
 **1. VillageSurvey_VillageDetailsFragment**
+
 Sub Dist is need to remove but when we want to search village, sub dist would not be empty.
 So on click of search village name, the if-condition validating sub dist was commented.
+**UPDATE**
+**16-10-25**
+updated village name replaced search by dropdown 
 
 ---
 
@@ -169,6 +173,12 @@ After adding data, updates Temp_Member_Data_Sync.
 T_WeeklyHouseholdCashFlow
 UPDATE 13-10-25 – added deleteByBranchIdFileNo().
 UPDATE 14-10-25 – logs only if debug mode enabled.
+
+---
+
+**Business Details Entry Screen**
+**UPDATE - 16-10-25**
+updated xml edit text fields which only required numbers
 
 ---
 
