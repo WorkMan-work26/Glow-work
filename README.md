@@ -208,6 +208,9 @@ TotalPrice → TotalAmount
 
 UPDATE 14-10-25 – added Loan Proposal sync method.
 
+**|UPDATE 14-10-25**
+
+in business sync one field is mismatched getTargetWeeklyIncome is passing place of getTargetWeeklySalesStr corrected it 
 ---
 
 **InsertUpdateTables**
@@ -218,6 +221,9 @@ inside downloadFileDetails() to fetch cloud data and insert/update local DB.
 UPDATE 14-10-25 – logs only if debug mode enabled.
 Added loan proposal and business details download methods.
 
+**|UPDATE 17-10-25**
+
+added death benefit,nominee details, central approval justification, contact person details, GLOSSessionAttendance download file details.
 ---
 
 **SqlitDataClass**
