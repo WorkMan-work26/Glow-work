@@ -208,7 +208,7 @@ TotalPrice → TotalAmount
 
 UPDATE 14-10-25 – added Loan Proposal sync method.
 
-**|UPDATE 14-10-25**
+**|UPDATE 17-10-25**
 
 in business sync one field is mismatched getTargetWeeklyIncome is passing place of getTargetWeeklySalesStr corrected it 
 ---
