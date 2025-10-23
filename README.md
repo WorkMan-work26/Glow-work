@@ -244,6 +244,10 @@ LoanProposal
 **ApplicationStatusAdapter**
 14-10-25 – Added status update methods for newly created 6 screens.
 
+**23-10-2025**
+
+updated death benefit application status update here i just comment the tab_insurance existing and added death benefit in all required places. in string xml file removed Insurance and added Death Benefit in memberdataenterlist.
+
 ---
 
 **MDE**
