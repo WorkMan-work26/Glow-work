@@ -211,6 +211,7 @@ UPDATE 14-10-25 – added Loan Proposal sync method.
 **|UPDATE 17-10-25**
 
 in business sync one field is mismatched getTargetWeeklyIncome is passing place of getTargetWeeklySalesStr corrected it 
+
 ---
 
 **InsertUpdateTables**
@@ -224,6 +225,7 @@ Added loan proposal and business details download methods.
 **|UPDATE 17-10-25**
 
 added death benefit,nominee details, central approval justification, contact person details, GLOSSessionAttendance download file details.
+
 ---
 
 **SqlitDataClass**
@@ -233,6 +235,10 @@ KEY_GLOS_SeasonalWorkersDetail
 KEY_GLOS_WeeklyBusinessCashFlow
 KEY_GLOS_WeeklyHouseholdCashFlow
 LoanProposal
+
+**|UPDATE 24-10-25**
+
+added newly created 4 offline client tables to tablenameList 
 
 ---
 
@@ -255,4 +261,13 @@ updated death benefit application status update here i just comment the tab_insu
 
 ---
 
-Would you like me to also format this into a **Word (.docx)** or **PDF** version that keeps the structure but adds visual hierarchy (bold titles, spacing, etc.)?
+###### **GLOS_DataSource**
+
+**24-10-25**
+
+added new 4 client tables 
+t_GLOSOfflineClient
+t_GLOSOfflineClientRelation
+t_GLOSOfflineClientAddress
+t_GLOSOfflineClientBankAccount
+
