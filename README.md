@@ -91,6 +91,10 @@ WhiteGoodsVoucherDetailsFragment
 Displays vouchers in table using WhiteGoodsDetailsListAdapter.
 Local table created for CRUD operations via T_GlosVoucherDetail.
 
+**|UPDATE 28-10-25**
+
+updated UI displaying total voucher amount, expected loan amount and cash expected below the table.
+
 Add new voucher via top bar → navigates to WhiteGoodsVouchersDetailsEntryActivity.
 Existing voucher loads read-only; new entry allows editing.
 After save, updates local DB and navigates back to fragment.
@@ -105,6 +109,11 @@ Logs printed only if debug mode enabled.
 
 WhiteGoodsVoucherDetailsEntryActivity
 After adding data, updates Temp_Member_Data_Sync with table name.
+
+**|UPDATE 27-10-25**
+
+changed total price entry time validation check with onSave validation.
+
 
 T_GlosVoucherDetail
 UPDATE 13-10-25 – added deleteByBranchIdFileNo() used in InserUpdateTables class.
@@ -270,4 +279,55 @@ t_GLOSOfflineClient
 t_GLOSOfflineClientRelation
 t_GLOSOfflineClientAddress
 t_GLOSOfflineClientBankAccount
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+###### **T_GLOSOfflineClient**
+
+**27-10-25**
+
+created kotlin class with insert, get and delete methods for new offline client table
+
+KEY_GLOS_OFFLINE_Client_ApplicationFileNo
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+###### **T_GLOSClientOfflineRelation**
+
+**27-10-25**
+
+created kotlin class with insert, get and delete methods for new offline client relation table
+
+KEY_GLOS_OFFLINE_CLIENT_RELATION_ApplicationFileNo
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+###### **T_GLOSClientOfflineBankAccount**
+
+**27-10-25**
+
+created kotlin class with insert, get and delete methods for new offline client bank account table
+
+KEY_GLOSCLIENT_OFFLINE_BANK_ACCOUNT_ApplicationFileNo
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+###### **T_GLOSClientOfflineAddress**
+
+**27-10-25**
+
+created kotlin class with insert, get and delete methods for new offline client address table
+
+KEY_GLOS_OFFLINE_CLIENT_ADDRESS_ApplicationFileNo
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+###### **BusinessDetailsActivity**
+
+**27-10-25**
+
+updated business date edit text with editText and date picker and related code logic in activity
 
