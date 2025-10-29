@@ -331,3 +331,13 @@ KEY_GLOS_OFFLINE_CLIENT_ADDRESS_ApplicationFileNo
 
 updated business date edit text with editText and date picker and related code logic in activity
 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+###### **CenterDetailsForm and CustomExpandableListAdapter**
+
+**29-10-25**
+
+when user select MY Files in Modules then in those list of files it need to show file download status for that i created one imageview and textview in xmls regarding that both class, if file is downloaded then it will display green color background file icon with File Downloaded text and if file is not downloaded then it will show red background with file icon with file not downloaded text programmatically in both of those classes.
+
+
