@@ -17,6 +17,10 @@ So on click of search village name, the if-condition validating sub dist was com
 **16-10-25**
 updated village name replaced search by dropdown 
 
+|**UPDATE 05-11-25**
+
+checking internet connectivity to search perveance/state and District. if network is there then it allow user to search and edit text will be disabled, if no network then it will no allow user to search and edit text will be enabled.
+
 ---
 
 **2. Village Category**
@@ -114,10 +118,17 @@ After adding data, updates Temp_Member_Data_Sync with table name.
 
 changed total price entry time validation check with onSave validation.
 
+**|UPDATE 05-11-25**
 
-T_GlosVoucherDetail
-UPDATE 13-10-25 – added deleteByBranchIdFileNo() used in InserUpdateTables class.
-UPDATE 14-10-25 – logs printed only if debug mode enabled.
+bug fixed -- when inserting new voucher detail initially it was checking voucher is already exist or not where i am not considering application file no. hence when single member if he add voucher data for another application file then generally it get data and display voucher is already exist. it was solved by checking based on application file no also in where condition.
+
+### T_GlosVoucherDetail
+**UPDATE 13-10-25** 
+
+– added deleteByBranchIdFileNo() used in InserUpdateTables class.
+**UPDATE 14-10-25** 
+
+– logs printed only if debug mode enabled.
 
 ---
 
@@ -143,12 +154,14 @@ Created form with fields:
 
 When user clicks Save → updates to local DB.
 
-UPDATE 06-10-2025 – updated dropdowns with user codes.
-UPDATE 14-10-25 – logs only if debug mode enabled, updates Temp_Member_Data_Sync.
+**UPDATE 06-10-2025** 
+– updated dropdowns with user codes.
+**UPDATE 14-10-25**
+– logs only if debug mode enabled, updates Temp_Member_Data_Sync.
 
 T_SeasonalWorkersDetails
-UPDATE 13-10-25 – added deleteByBranchIdFileNo().
-UPDATE 14-10-25 – logs only if debug mode enabled.
+**UPDATE 13-10-25** – added deleteByBranchIdFileNo().
+**UPDATE 14-10-25** – logs only if debug mode enabled.
 
 ---
 
@@ -234,6 +247,18 @@ Added loan proposal and business details download methods.
 **|UPDATE 17-10-25**
 
 added death benefit,nominee details, central approval justification, contact person details, GLOSSessionAttendance download file details.
+
+**|UPDATE 30-10-25**
+
+added insert method for 
+t_GLOSOfflineClient
+t_GLOSOfflineClientRelation
+t_GLOSOfflineClientAddress
+t_GLOSOfflineClientBankAccount
+
+**|UPDATE 03-11-25**
+
+added insert method for t_GLOSOfflineGroupMember
 
 ---
 
@@ -339,5 +364,31 @@ updated business date edit text with editText and date picker and related code l
 **29-10-25**
 
 when user select MY Files in Modules then in those list of files it need to show file download status for that i created one imageview and textview in xmls regarding that both class, if file is downloaded then it will display green color background file icon with File Downloaded text and if file is not downloaded then it will show red background with file icon with file not downloaded text programmatically in both of those classes.
+
+
+getDownloadServerData_Response
+callFileDownloadRequest --> call api and get client offline data insert into table
+
+
+ImportMemberFragment
+-when user click Drop/Import option this fragment will open.
+-here when device is in offline it will display offline import
+i.e importtypeid.equalsIgnoreCase("O") then it will navigate to OfflineClientListActivity
+
+OfflineClientListActivity
+ClientAdapter
+-Here it will display all then clients name of selected file no. and branch with the help of ClientAdapter in recycler list.
+-when user select any client name it will ask to import that client data or not if yes it will get selected all client data from T_GLOSOfflineClient and insert to T_GLOSClient and same as all offline data to its master tables.
+-after importing it will navigate to CenterDetailStageForTesting.
+
+
+**|UPDATE 03-11-25**
+
+- added t_GLOSOfflineGroupMember import method.
+
+
+T_GLOSOfflineGroupMember
+
+- insert, get and delete methods for t_GLOSOfflineGroupMember table.
 
 
