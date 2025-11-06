@@ -21,6 +21,10 @@ updated village name replaced search by dropdown
 
 checking internet connectivity to search perveance/state and District. if network is there then it allow user to search and edit text will be disabled, if no network then it will no allow user to search and edit text will be enabled.
 
+|**UPDATE 06-11-25**
+
+when online by searching we will get stateID and districtID but when manually entering it wont get stateID hence in validation checking state instde of stateID.
+
 ---
 
 **2. Village Category**
@@ -390,5 +394,13 @@ ClientAdapter
 T_GLOSOfflineGroupMember
 
 - insert, get and delete methods for t_GLOSOfflineGroupMember table.
+
+
+
+##### **ConsentActivity**
+
+ProfileFragment(FAB C&C menu_consent) --> ConsentActivity(Certifiaction and Consent) --> SignatureMainLayout(Signature)
+**06-11-25**
+in signatureMainLayout user drawing signature and saving, after in ConsentActivity it was displaying in image view with 90' rotation -- updated it with no rotation.
 
 
