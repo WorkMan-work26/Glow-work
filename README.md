@@ -95,7 +95,7 @@ Created new edit text, passing user input value in place of dropdown.
 Created new fragment:
 Member Files → Group Details → Application → Profile Details → User Level → Bank
 
-WhiteGoodsVoucherDetailsFragment
+**WhiteGoodsVoucherDetailsFragment**
 Displays vouchers in table using WhiteGoodsDetailsListAdapter.
 Local table created for CRUD operations via T_GlosVoucherDetail.
 
@@ -107,15 +107,15 @@ Add new voucher via top bar → navigates to WhiteGoodsVouchersDetailsEntryActiv
 Existing voucher loads read-only; new entry allows editing.
 After save, updates local DB and navigates back to fragment.
 
-UPDATE 10-10-25
+**UPDATE 10-10-25**
 Added Expected Loan Amount and Cash Expected below Total Voucher Amount as per FSD.
 Expected Loan from T_GLOSClientLoan.get_glosClientLoan_branchwise.
 Cash Expected based on FSD formula.
 
-UPDATE 14-10-25
+**UPDATE 14-10-25**
 Logs printed only if debug mode enabled.
 
-WhiteGoodsVoucherDetailsEntryActivity
+**WhiteGoodsVoucherDetailsEntryActivity**
 After adding data, updates Temp_Member_Data_Sync with table name.
 
 **|UPDATE 27-10-25**
@@ -125,6 +125,9 @@ changed total price entry time validation check with onSave validation.
 **|UPDATE 05-11-25**
 
 bug fixed -- when inserting new voucher detail initially it was checking voucher is already exist or not where i am not considering application file no. hence when single member if he add voucher data for another application file then generally it get data and display voucher is already exist. it was solved by checking based on application file no also in where condition.
+
+**|UPDATE 10-11-25**
+updated text view field name product code with quotation number in text view and code wherever required.
 
 ### T_GlosVoucherDetail
 **UPDATE 13-10-25** 
@@ -163,7 +166,8 @@ When user clicks Save → updates to local DB.
 **UPDATE 14-10-25**
 – logs only if debug mode enabled, updates Temp_Member_Data_Sync.
 
-T_SeasonalWorkersDetails
+**T_SeasonalWorkersDetails**
+
 **UPDATE 13-10-25** – added deleteByBranchIdFileNo().
 **UPDATE 14-10-25** – logs only if debug mode enabled.
 
@@ -173,13 +177,17 @@ T_SeasonalWorkersDetails
 08-10-25 – Created new fragment and model T_WeeklyBusinessCashFlow.
 Added table KEY_GLOS_WeeklyBusinessCashFlow.
 
-UPDATE 09-10-25 – Added info dialog to display business types and total income from T_GLOSBusinessDetail.
+**UPDATE 09-10-25** – Added info dialog to display business types and total income from T_GLOSBusinessDetail.
 Added auto-calculations and try-catch blocks.
 
-UPDATE 14-10-25 – Logs only if debug mode enabled.
-UPDATE 15-10-25 – If no data, “No Data Found” displays.
+**UPDATE 14-10-25** – Logs only if debug mode enabled.
+**UPDATE 15-10-25** – If no data, “No Data Found” displays.
 
-T_WeeklyBusinessCashFlow
+**|UPDATE 10-11-25**
+updated business other 1-6 text view ids
+
+
+**T_WeeklyBusinessCashFlow**
 UPDATE 13-10-25 – added deleteByBranchIdFileNo().
 UPDATE 14-10-25 – logs only if debug mode enabled.
 After adding data, updates Temp_Member_Data_Sync.
@@ -193,10 +201,10 @@ After adding data, updates Temp_Member_Data_Sync.
 Weekly Business Cash Flow, Weekly Household Cash Flow, White Goods, and Seasonal Workers.
 Created checkForLocalDataSync, getLocalDataSync, updateLocalDataSync methods.
 
-UPDATE 14-10-25 – logs only if debug mode enabled.
+**UPDATE 14-10-25** – logs only if debug mode enabled.
 After adding data, updates Temp_Member_Data_Sync.
 
-T_WeeklyHouseholdCashFlow
+**T_WeeklyHouseholdCashFlow**
 UPDATE 13-10-25 – added deleteByBranchIdFileNo().
 UPDATE 14-10-25 – logs only if debug mode enabled.
 
