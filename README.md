@@ -411,4 +411,22 @@ ProfileFragment(FAB C&C menu_consent) --> ConsentActivity(Certifiaction and Cons
 **06-11-25**
 in signatureMainLayout user drawing signature and saving, after in ConsentActivity it was displaying in image view with 90' rotation -- updated it with no rotation.
 
+##### **NomieeDetailsScreen**
+**12-11-25**
+some problem while adding nominee to relation, when adding nominee in check condition initially it was not checking memberType so when we add same nominee for other relation instead inserting it was always updating solved this issue by adding memberType in check method where condition.
+
+**13-11-25**
+ some changes in selection of nominee where when death benefit for Member then it will show Spouse same like that when death benefit for Spouse in that case it will display Member in selection dropdown.
+
+**14-11-25**
+while adding member as nominee for spouse there nomineeRelationShipRefNo for member is taking member id it was updating some spouse data for member, so instead of memberId hardcoding 0 value now it will update correctly.
+
+##### **DeathBenefitForm**
+**12-11-25**
+initially for amount dropdown it was setting all amounts present in T_InsurencePremiumConfig table now updated with Death Benefit For dropdown selection, if it selected member then fetch only member amount or if selected Spouse it will fetch spouse amount list
+
+##### **TrainingSessionEntryScreen**
+**13-11-25**
+here while saving need to add current time to db and sync so made those changes in application level later said to update time with date column, so updated changes for time was keep as it is and updated time to date field only, check with sync in xml parameter was passing correctly but in db it was storing default.
+
 
