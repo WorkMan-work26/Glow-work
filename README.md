@@ -429,4 +429,23 @@ initially for amount dropdown it was setting all amounts present in T_InsurenceP
 **13-11-25**
 here while saving need to add current time to db and sync so made those changes in application level later said to update time with date column, so updated changes for time was keep as it is and updated time to date field only, check with sync in xml parameter was passing correctly but in db it was storing default.
 
+**17-11-25**
 
+##### Training Session Changes
+
+In training session for Training Session 5 need to add Booklet Issued switch in PresentAbsentAdapter and created isBookletIssued column in local db sending in sync and downloading in InsertUpdateTables.
+also added session time in xml in TrainingSessionEntryScreen in sessionDoneDate passing session time with date in format and while displaying extracting that sessionDoneDate and setting text for Session date and Session Time, in TrainingSessionActivity added new time column to sessions table.
+
+**18-11-25**
+
+##### Training Session Changes
+
+date and time in sessionDoneDate format issue checked with it and update where ever required. 
+
+##### DropMemberList_Fragment
+
+added some lines of code to delete newly added table date by ourBranchId, applicationFileNo, memberId.
+
+##### LoanDetailsFragment
+
+one check box text changes (Only Savings Required) and made one field disable, non mandatory, and isHide for loandetails_tv_disburesement.
