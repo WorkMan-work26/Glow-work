@@ -449,3 +449,36 @@ added some lines of code to delete newly added table date by ourBranchId, applic
 ##### LoanDetailsFragment
 
 one check box text changes (Only Savings Required) and made one field disable, non mandatory, and isHide for loandetails_tv_disburesement.
+
+**19-11-25**
+
+##### PreparatoryActivitiesFragment
+
+training sessions display date method added.
+
+##### AddressForm and QDEAddressForm 
+initially state, district were auto fill by pin code now removed pin code and added new dropdown Village Name from branchCodeDetails and displaying Village Name and Village Id, when network is connected it will call sp and get district, state details or if no network it allow user to enter district and state manually.  
+
+
+**20-11-25**
+
+##### AddressForm and QDEAddressForm 
+
+checked with sp and binding data to views and checked with sync sp.
+
+##### TrainingSessionActivity
+
+added filter condition before passing attendanceList to adapter. here in Training Block 1 it will only display available sessions and for Training Block 2 it will display all the training sessions.
+
+**24-11-25**
+
+##### TrainingSessionEntryScreen
+
+new functionality where for selection of each session if that client/member is existing and has restingTime then it will allow that member to those sessions in TrainingSessionConfig table, if new client it will allow to existing all sessions one by one.
+for the above created new table TrainingSessionConfig with model class and operations class.
+
+**25-11-25**
+
+##### TrainingSessionEntryScreen
+
+corrections in some logic, added new column restingTime in both online and offline client tables, also added in all related files, testing has been done working fine.
